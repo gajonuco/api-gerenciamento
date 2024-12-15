@@ -1,0 +1,1426 @@
+{
+	"info": {
+		"_postman_id": "ba259319-3944-4c86-a16e-2c9b6b9e5940",
+		"name": "API - Gerenciamento",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "37859421",
+		"_collection_link": "https://automaes-teste.postman.co/workspace/Team-Workspace~3aafc675-8fb6-4587-8df5-de3bbc545674/collection/37859421-ba259319-3944-4c86-a16e-2c9b6b9e5940?action=share&source=collection_link&creator=37859421"
+	},
+	"item": [
+		{
+			"name": "Usuário",
+			"item": [
+				{
+					"name": "Cadastro",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\":\"gajonuco\",\r\n    \"password\":\"123456789gN##\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/users/register",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"users",
+								"register"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Response 201",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"username\":\"gajonuco\",\r\n    \"password\":\"123456789gN##\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3000/api/users/register",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"users",
+										"register"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "46"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"2e-8AFU0u8Zx+r0An+TPRKuj4qoA4c\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 14 Dec 2024 16:53:24 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"Usuário cadastrado com sucesso!\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\":\"gajonuco\",\r\n    \"password\":\"123456789gN##\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/users/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"users",
+								"login"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Response 200",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"username\":\"gajonuco\",\r\n    \"password\":\"123456789gN##\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3000/api/users/login",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"users",
+										"login"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "224"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"e0-S86K7Ase2Q6YlxKMxG/X6FzNo8I\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 14 Dec 2024 18:22:11 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3NWRjYTIwODM0ZWJkMzlhMjBiN2YyZiIsImlhdCI6MTczNDIwMDUzMSwiZXhwIjoxNzM0MjA0MTMxfQ.iwNR8cburynNtX1VQmOpFdyVApMaZRwEUhp-_BHUZRk\",\n    \"message\": \"Login realizado com sucesso!\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Área protegida",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3NWRjYTIwODM0ZWJkMzlhMjBiN2YyZiIsImlhdCI6MTczNDIwMDUzMSwiZXhwIjoxNzM0MjA0MTMxfQ.iwNR8cburynNtX1VQmOpFdyVApMaZRwEUhp-_BHUZRk",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\":\"gajonuco\",\r\n    \"password\":\"123456789gN##\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/users/profile",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"users",
+								"profile"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Response 200",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"username\":\"gajonuco\",\r\n    \"password\":\"123456789gN##\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3000/api/users/profile",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"users",
+										"profile"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "193"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"c1-j5lv1F9sSw/A7TzmuG3oxVAmboU\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 14 Dec 2024 18:23:31 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"Bem-vindo à área protegida!\",\n    \"user\": {\n        \"_id\": \"675dca20834ebd39a20b7f2f\",\n        \"username\": \"gajonuco\",\n        \"createdAt\": \"2024-12-14T18:10:40.727Z\",\n        \"updatedAt\": \"2024-12-14T18:10:40.727Z\",\n        \"__v\": 0\n    }\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Categorias",
+			"item": [
+				{
+					"name": "Criar",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3NWRjYTIwODM0ZWJkMzlhMjBiN2YyZiIsImlhdCI6MTczNDIwMDUzMSwiZXhwIjoxNzM0MjA0MTMxfQ.iwNR8cburynNtX1VQmOpFdyVApMaZRwEUhp-_BHUZRk",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Alimentos\",\r\n    \"description\": \"Categoria com produtos alimentícios, como frescos, congelados e enlatados.\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/categories",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"categories"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Response 200",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"Alimentos\",\r\n    \"description\": \"Categoria com produtos alimentícios, como frescos, congelados e enlatados.\"\r\n}\r\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3000/api/categories",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"categories"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "286"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"11e-S42TjgcpzMAwHDdU0wDTYdr0lUE\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 14 Dec 2024 18:34:17 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"Categoria criada com sucesso!\",\n    \"category\": {\n        \"name\": \"Alimentos\",\n        \"description\": \"Categoria com produtos alimentícios, como frescos, congelados e enlatados.\",\n        \"_id\": \"675dcfa9834ebd39a20b7f38\",\n        \"createdAt\": \"2024-12-14T18:34:17.273Z\",\n        \"updatedAt\": \"2024-12-14T18:34:17.273Z\",\n        \"__v\": 0\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "Listar Todos",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/categories",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"categories"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Response 200",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:3000/api/categories",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"categories"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "731"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"2db-Vvx4ZeJ9A6AJB1rIz5jKnfHCcLA\""
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 15 Dec 2024 22:30:14 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"_id\": \"675dcfa9834ebd39a20b7f38\",\n        \"name\": \"Alimentos\",\n        \"description\": \"Categoria com produtos alimentícios, como frescos, congelados e enlatados.\",\n        \"createdAt\": \"2024-12-14T18:34:17.273Z\",\n        \"updatedAt\": \"2024-12-14T18:34:17.273Z\",\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"675dd117834ebd39a20b7f3b\",\n        \"name\": \"Bebidas\",\n        \"description\": \"Categoria com produtos líquidos, como refrigerantes, sucos, cafés e águas.\",\n        \"createdAt\": \"2024-12-14T18:40:23.884Z\",\n        \"updatedAt\": \"2024-12-14T18:40:23.884Z\",\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"675f532c0fd03168835a6c7e\",\n        \"name\": \"Gastronomia\",\n        \"description\": \"Categoria com produtos alimentícios que abrangem ingredientes, temperos, e alimentos prontos para consumo.\",\n        \"createdAt\": \"2024-12-15T22:07:40.180Z\",\n        \"updatedAt\": \"2024-12-15T22:07:40.180Z\",\n        \"__v\": 0\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "Listar Específico",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3NWRjYTIwODM0ZWJkMzlhMjBiN2YyZiIsImlhdCI6MTczNDIwMDUzMSwiZXhwIjoxNzM0MjA0MTMxfQ.iwNR8cburynNtX1VQmOpFdyVApMaZRwEUhp-_BHUZRk",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/categories/{{idCategoria}}",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"categories",
+								"{{idCategoria}}"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Response 200",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:3000/api/categories/675dd117834ebd39a20b7f3b",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"categories",
+										"675dd117834ebd39a20b7f3b"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "231"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"e7-/x9+4iMoQhBdefFX9ueU3b5tpzo\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 14 Dec 2024 18:50:42 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"_id\": \"675dd117834ebd39a20b7f3b\",\n    \"name\": \"Bebidas\",\n    \"description\": \"Categoria com produtos líquidos, como refrigerantes, sucos, cafés e águas.\",\n    \"createdAt\": \"2024-12-14T18:40:23.884Z\",\n    \"updatedAt\": \"2024-12-14T18:40:23.884Z\",\n    \"__v\": 0\n}"
+						}
+					]
+				},
+				{
+					"name": "Atualizar",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3NWRjYTIwODM0ZWJkMzlhMjBiN2YyZiIsImlhdCI6MTczNDIwODUzMiwiZXhwIjoxNzM0MjEyMTMyfQ.MEzHjmOwWlx_fgg9gFpZSn2gkKc4rQRRkM529OQNAqM",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Gastronomia\",\r\n    \"description\": \"Categoria com produtos alimentícios que abrangem ingredientes, temperos, e alimentos prontos para consumo.\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/categories/{{idCategoria}}",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"categories",
+								"{{idCategoria}}"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Response 200",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"Gastronomia\",\r\n    \"description\": \"Categoria com produtos alimentícios que abrangem ingredientes, temperos, e alimentos prontos para consumo.\"\r\n}\r\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3000/api/categories/675d9d16c189b51c84305b86",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"categories",
+										"675d9d16c189b51c84305b86"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "324"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"144-EAaYzy1r21fKoEoFHNP3acPQJbw\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 14 Dec 2024 20:35:45 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"Categoria atualizada com sucesso!\",\n    \"category\": {\n        \"_id\": \"675d9d16c189b51c84305b86\",\n        \"name\": \"Gastronomia\",\n        \"description\": \"Categoria com produtos alimentícios que abrangem ingredientes, temperos, e alimentos prontos para consumo.\",\n        \"createdAt\": \"2024-12-14T14:58:30.235Z\",\n        \"updatedAt\": \"2024-12-14T20:35:45.754Z\",\n        \"__v\": 0\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "Deletar",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3NWRjYTIwODM0ZWJkMzlhMjBiN2YyZiIsImlhdCI6MTczNDIwODUzMiwiZXhwIjoxNzM0MjEyMTMyfQ.MEzHjmOwWlx_fgg9gFpZSn2gkKc4rQRRkM529OQNAqM",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/categories/{{idCategoria}}",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"categories",
+								"{{idCategoria}}"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Response 200",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:3000/api/categories/675d9d16c189b51c84305b86",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"categories",
+										"675d9d16c189b51c84305b86"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "45"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"2d-Gm7C3g18bsGatJuqGPh2MwJuBvI\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 14 Dec 2024 20:38:24 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"Categoria deletada com sucesso!\"\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Produto",
+			"item": [
+				{
+					"name": "Cadastrar",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3NWRjYTIwODM0ZWJkMzlhMjBiN2YyZiIsImlhdCI6MTczNDMwMDQyOSwiZXhwIjoxNzM0MzA0MDI5fQ.u2D4FfaEofGccXoK0j_1GZsUlsaY5ETEfkhAg-x0MgE",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Smoothie de Frutas Vermelhas\",\r\n    \"description\": \"Bebida refrescante feita com frutas vermelhas, ideal para um lanche saudável.\",\r\n    \"amount\": 40,\r\n    \"price\": 12.99,\r\n    \"categories\": [\"{{idCategoria}}\", \"{{idCategoria}}\"]\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/products",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"products"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Response 201",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"Smoothie de Frutas Vermelhas\",\r\n    \"description\": \"Bebida refrescante feita com frutas vermelhas, ideal para um lanche saudável.\",\r\n    \"amount\": 40,\r\n    \"price\": 12.99,\r\n    \"categories\": [\"{{idCategoria}}\", \"{{idCategoria}}\"]\r\n}\r\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3000/api/products",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"products"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "400"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"190-oACOR8a2oXqXS+RXkopaS2HY27g\""
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 15 Dec 2024 22:08:51 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"Produto criado com sucesso!\",\n    \"product\": {\n        \"name\": \"Smoothie de Frutas Vermelhas\",\n        \"description\": \"Bebida refrescante feita com frutas vermelhas, ideal para um lanche saudável.\",\n        \"amount\": 40,\n        \"price\": 12.99,\n        \"categories\": [\n            \"675dd117834ebd39a20b7f3b\",\n            \"675f532c0fd03168835a6c7e\"\n        ],\n        \"_id\": \"675f53730fd03168835a6c83\",\n        \"createdAt\": \"2024-12-15T22:08:51.669Z\",\n        \"updatedAt\": \"2024-12-15T22:08:51.669Z\",\n        \"__v\": 0\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "Deletar",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3NWRjYTIwODM0ZWJkMzlhMjBiN2YyZiIsImlhdCI6MTczNDMwMDQyOSwiZXhwIjoxNzM0MzA0MDI5fQ.u2D4FfaEofGccXoK0j_1GZsUlsaY5ETEfkhAg-x0MgE",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/products/{{idCategoria}}",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"products",
+								"{{idCategoria}}"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Response 200",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:3000/api/products/{{idCategoria}}",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"products",
+										"{{idCategoria}}"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "43"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"2b-7R8DOGU3Efm+tTGK+UjGHGoOIQw\""
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 15 Dec 2024 22:13:52 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"Produto deletado com sucesso!\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Listar Todos",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/products",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"products"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Response 200",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:3000/api/products",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"products"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "3278"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"cce-L0gKd3PF07T/E92xmQxs1Fan1e4\""
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 15 Dec 2024 22:19:30 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"_id\": \"675f53730fd03168835a6c83\",\n        \"name\": \"Smoothie de Frutas Vermelhas\",\n        \"description\": \"Bebida refrescante feita com frutas vermelhas, ideal para um lanche saudável.\",\n        \"amount\": 40,\n        \"price\": 12.99,\n        \"categories\": [\n            {\n                \"_id\": \"675dd117834ebd39a20b7f3b\",\n                \"name\": \"Bebidas\",\n                \"description\": \"Categoria com produtos líquidos, como refrigerantes, sucos, cafés e águas.\"\n            },\n            {\n                \"_id\": \"675f532c0fd03168835a6c7e\",\n                \"name\": \"Gastronomia\",\n                \"description\": \"Categoria com produtos alimentícios que abrangem ingredientes, temperos, e alimentos prontos para consumo.\"\n            }\n        ],\n        \"createdAt\": \"2024-12-15T22:08:51.669Z\",\n        \"updatedAt\": \"2024-12-15T22:08:51.669Z\",\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"675f53f30fd03168835a6c87\",\n        \"name\": \"Marmita de Feijoada\",\n        \"description\": \"Prato típico brasileiro, feijoada com arroz, farofa e couve.\",\n        \"amount\": 50,\n        \"price\": 25.99,\n        \"categories\": [\n            {\n                \"_id\": \"675dcfa9834ebd39a20b7f38\",\n                \"name\": \"Alimentos\",\n                \"description\": \"Categoria com produtos alimentícios, como frescos, congelados e enlatados.\"\n            },\n            {\n                \"_id\": \"675dd117834ebd39a20b7f3b\",\n                \"name\": \"Bebidas\",\n                \"description\": \"Categoria com produtos líquidos, como refrigerantes, sucos, cafés e águas.\"\n            },\n            {\n                \"_id\": \"675f532c0fd03168835a6c7e\",\n                \"name\": \"Gastronomia\",\n                \"description\": \"Categoria com produtos alimentícios que abrangem ingredientes, temperos, e alimentos prontos para consumo.\"\n            }\n        ],\n        \"createdAt\": \"2024-12-15T22:10:59.508Z\",\n        \"updatedAt\": \"2024-12-15T22:10:59.508Z\",\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"675f54200fd03168835a6c8b\",\n        \"name\": \"Sanduíche Natural de Frango\",\n        \"description\": \"Sanduíche natural com peito de frango, alface e tomate, ideal para um lanche saudável.\",\n        \"amount\": 60,\n        \"price\": 9.99,\n        \"categories\": [\n            {\n                \"_id\": \"675dd117834ebd39a20b7f3b\",\n                \"name\": \"Bebidas\",\n                \"description\": \"Categoria com produtos líquidos, como refrigerantes, sucos, cafés e águas.\"\n            },\n            {\n                \"_id\": \"675f532c0fd03168835a6c7e\",\n                \"name\": \"Gastronomia\",\n                \"description\": \"Categoria com produtos alimentícios que abrangem ingredientes, temperos, e alimentos prontos para consumo.\"\n            }\n        ],\n        \"createdAt\": \"2024-12-15T22:11:44.520Z\",\n        \"updatedAt\": \"2024-12-15T22:11:44.520Z\",\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"675f55300fd03168835a6c95\",\n        \"name\": \"Refrigerante Coca-Cola\",\n        \"description\": \"Refrigerante clássico de cola com sabor refrescante.\",\n        \"amount\": 50,\n        \"price\": 5.99,\n        \"categories\": [\n            {\n                \"_id\": \"675dd117834ebd39a20b7f3b\",\n                \"name\": \"Bebidas\",\n                \"description\": \"Categoria com produtos líquidos, como refrigerantes, sucos, cafés e águas.\"\n            }\n        ],\n        \"createdAt\": \"2024-12-15T22:16:16.235Z\",\n        \"updatedAt\": \"2024-12-15T22:16:16.235Z\",\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"675f55570fd03168835a6c99\",\n        \"name\": \"Molho de Tomate Caseiro\",\n        \"description\": \"Molho de tomate artesanal, feito com ingredientes frescos e naturais.\",\n        \"amount\": 50,\n        \"price\": 8.99,\n        \"categories\": [\n            {\n                \"_id\": \"675f532c0fd03168835a6c7e\",\n                \"name\": \"Gastronomia\",\n                \"description\": \"Categoria com produtos alimentícios que abrangem ingredientes, temperos, e alimentos prontos para consumo.\"\n            }\n        ],\n        \"createdAt\": \"2024-12-15T22:16:55.308Z\",\n        \"updatedAt\": \"2024-12-15T22:16:55.308Z\",\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"675f55700fd03168835a6c9d\",\n        \"name\": \"Arroz Branco Tipo 1\",\n        \"description\": \"Arroz branco tipo 1 de alta qualidade, ideal para o dia a dia.\",\n        \"amount\": 200,\n        \"price\": 4.99,\n        \"categories\": [\n            {\n                \"_id\": \"675dcfa9834ebd39a20b7f38\",\n                \"name\": \"Alimentos\",\n                \"description\": \"Categoria com produtos alimentícios, como frescos, congelados e enlatados.\"\n            }\n        ],\n        \"createdAt\": \"2024-12-15T22:17:20.985Z\",\n        \"updatedAt\": \"2024-12-15T22:17:20.985Z\",\n        \"__v\": 0\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "Listar Específico",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/products/{{idProduto}}",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"products",
+								"{{idProduto}}"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Response 200",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:3000/api/products/{{idProduto}}",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"products",
+										"{{idProduto}}"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "740"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"2e4-e9FxgxivStBrfMYG8JQ9adWyzIQ\""
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 15 Dec 2024 22:23:34 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"_id\": \"675f53f30fd03168835a6c87\",\n    \"name\": \"Marmita de Feijoada\",\n    \"description\": \"Prato típico brasileiro, feijoada com arroz, farofa e couve.\",\n    \"amount\": 50,\n    \"price\": 25.99,\n    \"categories\": [\n        {\n            \"_id\": \"675dcfa9834ebd39a20b7f38\",\n            \"name\": \"Alimentos\",\n            \"description\": \"Categoria com produtos alimentícios, como frescos, congelados e enlatados.\"\n        },\n        {\n            \"_id\": \"675dd117834ebd39a20b7f3b\",\n            \"name\": \"Bebidas\",\n            \"description\": \"Categoria com produtos líquidos, como refrigerantes, sucos, cafés e águas.\"\n        },\n        {\n            \"_id\": \"675f532c0fd03168835a6c7e\",\n            \"name\": \"Gastronomia\",\n            \"description\": \"Categoria com produtos alimentícios que abrangem ingredientes, temperos, e alimentos prontos para consumo.\"\n        }\n    ],\n    \"createdAt\": \"2024-12-15T22:10:59.508Z\",\n    \"updatedAt\": \"2024-12-15T22:10:59.508Z\",\n    \"__v\": 0\n}"
+						}
+					]
+				},
+				{
+					"name": "Atualizar",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3NWRjYTIwODM0ZWJkMzlhMjBiN2YyZiIsImlhdCI6MTczNDMwMDQyOSwiZXhwIjoxNzM0MzA0MDI5fQ.u2D4FfaEofGccXoK0j_1GZsUlsaY5ETEfkhAg-x0MgE",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Café da Manhã Completo\",\r\n    \"description\": \"Combo de café da manhã com café expresso, croissant e frutas frescas.\",\r\n    \"amount\": 100,\r\n    \"price\": 18.99,\r\n    \"categories\": [\"{{idCategoria}}\", \"{{idCategoria}}\", \"{{idCategoria}}\"]\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/products/{{idProduto}}",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"products",
+								"{{idProduto}}"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Response 200",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"Café da Manhã Completo\",\r\n    \"description\": \"Combo de café da manhã com café expresso, croissant e frutas frescas.\",\r\n    \"amount\": 100,\r\n    \"price\": 18.99,\r\n    \"categories\": [\"{{idCategoria}}\", \"{{idCategoria}}\", \"{{idCategoria}}\"]\r\n}\r\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3000/api/products/{{idProduto}}",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"products",
+										"{{idProduto}}"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "422"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"1a6-7ohHSsSpssJdxf0fbx0q24XwU54\""
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 15 Dec 2024 22:31:50 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"Produto atualizado com sucesso!\",\n    \"product\": {\n        \"_id\": \"675f54200fd03168835a6c8b\",\n        \"name\": \"Café da Manhã Completo\",\n        \"description\": \"Combo de café da manhã com café expresso, croissant e frutas frescas.\",\n        \"amount\": 100,\n        \"price\": 18.99,\n        \"categories\": [\n            \"675dcfa9834ebd39a20b7f38\",\n            \"675dd117834ebd39a20b7f3b\",\n            \"675f532c0fd03168835a6c7e\"\n        ],\n        \"createdAt\": \"2024-12-15T22:11:44.520Z\",\n        \"updatedAt\": \"2024-12-15T22:31:50.684Z\",\n        \"__v\": 0\n    }\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Consultas Gerais",
+			"item": [
+				{
+					"name": "Listar todas as categorias com produtos associados",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/categories/with-products",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"categories",
+								"with-products"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Response 200",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:3000/api/categories/with-products",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"categories",
+										"with-products"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "4294"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"10c6-EHoqpb3nWjCslasFtc6xvXISyAg\""
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 15 Dec 2024 22:37:13 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"category\": {\n            \"_id\": \"675dcfa9834ebd39a20b7f38\",\n            \"name\": \"Alimentos\",\n            \"description\": \"Categoria com produtos alimentícios, como frescos, congelados e enlatados.\"\n        },\n        \"products\": [\n            {\n                \"_id\": \"675f53f30fd03168835a6c87\",\n                \"name\": \"Marmita de Feijoada\",\n                \"description\": \"Prato típico brasileiro, feijoada com arroz, farofa e couve.\",\n                \"amount\": 50,\n                \"price\": 25.99,\n                \"categories\": [\n                    \"675dcfa9834ebd39a20b7f38\",\n                    \"675dd117834ebd39a20b7f3b\",\n                    \"675f532c0fd03168835a6c7e\"\n                ],\n                \"createdAt\": \"2024-12-15T22:10:59.508Z\",\n                \"updatedAt\": \"2024-12-15T22:10:59.508Z\",\n                \"__v\": 0\n            },\n            {\n                \"_id\": \"675f54200fd03168835a6c8b\",\n                \"name\": \"Café da Manhã Completo\",\n                \"description\": \"Combo de café da manhã com café expresso, croissant e frutas frescas.\",\n                \"amount\": 100,\n                \"price\": 18.99,\n                \"categories\": [\n                    \"675dcfa9834ebd39a20b7f38\",\n                    \"675dd117834ebd39a20b7f3b\",\n                    \"675f532c0fd03168835a6c7e\"\n                ],\n                \"createdAt\": \"2024-12-15T22:11:44.520Z\",\n                \"updatedAt\": \"2024-12-15T22:31:50.684Z\",\n                \"__v\": 0\n            },\n            {\n                \"_id\": \"675f55700fd03168835a6c9d\",\n                \"name\": \"Arroz Branco Tipo 1\",\n                \"description\": \"Arroz branco tipo 1 de alta qualidade, ideal para o dia a dia.\",\n                \"amount\": 200,\n                \"price\": 4.99,\n                \"categories\": [\n                    \"675dcfa9834ebd39a20b7f38\"\n                ],\n                \"createdAt\": \"2024-12-15T22:17:20.985Z\",\n                \"updatedAt\": \"2024-12-15T22:17:20.985Z\",\n                \"__v\": 0\n            }\n        ]\n    },\n    {\n        \"category\": {\n            \"_id\": \"675dd117834ebd39a20b7f3b\",\n            \"name\": \"Bebidas\",\n            \"description\": \"Categoria com produtos líquidos, como refrigerantes, sucos, cafés e águas.\"\n        },\n        \"products\": [\n            {\n                \"_id\": \"675f53730fd03168835a6c83\",\n                \"name\": \"Smoothie de Frutas Vermelhas\",\n                \"description\": \"Bebida refrescante feita com frutas vermelhas, ideal para um lanche saudável.\",\n                \"amount\": 40,\n                \"price\": 12.99,\n                \"categories\": [\n                    \"675dd117834ebd39a20b7f3b\",\n                    \"675f532c0fd03168835a6c7e\"\n                ],\n                \"createdAt\": \"2024-12-15T22:08:51.669Z\",\n                \"updatedAt\": \"2024-12-15T22:08:51.669Z\",\n                \"__v\": 0\n            },\n            {\n                \"_id\": \"675f53f30fd03168835a6c87\",\n                \"name\": \"Marmita de Feijoada\",\n                \"description\": \"Prato típico brasileiro, feijoada com arroz, farofa e couve.\",\n                \"amount\": 50,\n                \"price\": 25.99,\n                \"categories\": [\n                    \"675dcfa9834ebd39a20b7f38\",\n                    \"675dd117834ebd39a20b7f3b\",\n                    \"675f532c0fd03168835a6c7e\"\n                ],\n                \"createdAt\": \"2024-12-15T22:10:59.508Z\",\n                \"updatedAt\": \"2024-12-15T22:10:59.508Z\",\n                \"__v\": 0\n            },\n            {\n                \"_id\": \"675f54200fd03168835a6c8b\",\n                \"name\": \"Café da Manhã Completo\",\n                \"description\": \"Combo de café da manhã com café expresso, croissant e frutas frescas.\",\n                \"amount\": 100,\n                \"price\": 18.99,\n                \"categories\": [\n                    \"675dcfa9834ebd39a20b7f38\",\n                    \"675dd117834ebd39a20b7f3b\",\n                    \"675f532c0fd03168835a6c7e\"\n                ],\n                \"createdAt\": \"2024-12-15T22:11:44.520Z\",\n                \"updatedAt\": \"2024-12-15T22:31:50.684Z\",\n                \"__v\": 0\n            },\n            {\n                \"_id\": \"675f55300fd03168835a6c95\",\n                \"name\": \"Refrigerante Coca-Cola\",\n                \"description\": \"Refrigerante clássico de cola com sabor refrescante.\",\n                \"amount\": 50,\n                \"price\": 5.99,\n                \"categories\": [\n                    \"675dd117834ebd39a20b7f3b\"\n                ],\n                \"createdAt\": \"2024-12-15T22:16:16.235Z\",\n                \"updatedAt\": \"2024-12-15T22:16:16.235Z\",\n                \"__v\": 0\n            }\n        ]\n    },\n    {\n        \"category\": {\n            \"_id\": \"675f532c0fd03168835a6c7e\",\n            \"name\": \"Gastronomia\",\n            \"description\": \"Categoria com produtos alimentícios que abrangem ingredientes, temperos, e alimentos prontos para consumo.\"\n        },\n        \"products\": [\n            {\n                \"_id\": \"675f53730fd03168835a6c83\",\n                \"name\": \"Smoothie de Frutas Vermelhas\",\n                \"description\": \"Bebida refrescante feita com frutas vermelhas, ideal para um lanche saudável.\",\n                \"amount\": 40,\n                \"price\": 12.99,\n                \"categories\": [\n                    \"675dd117834ebd39a20b7f3b\",\n                    \"675f532c0fd03168835a6c7e\"\n                ],\n                \"createdAt\": \"2024-12-15T22:08:51.669Z\",\n                \"updatedAt\": \"2024-12-15T22:08:51.669Z\",\n                \"__v\": 0\n            },\n            {\n                \"_id\": \"675f53f30fd03168835a6c87\",\n                \"name\": \"Marmita de Feijoada\",\n                \"description\": \"Prato típico brasileiro, feijoada com arroz, farofa e couve.\",\n                \"amount\": 50,\n                \"price\": 25.99,\n                \"categories\": [\n                    \"675dcfa9834ebd39a20b7f38\",\n                    \"675dd117834ebd39a20b7f3b\",\n                    \"675f532c0fd03168835a6c7e\"\n                ],\n                \"createdAt\": \"2024-12-15T22:10:59.508Z\",\n                \"updatedAt\": \"2024-12-15T22:10:59.508Z\",\n                \"__v\": 0\n            },\n            {\n                \"_id\": \"675f54200fd03168835a6c8b\",\n                \"name\": \"Café da Manhã Completo\",\n                \"description\": \"Combo de café da manhã com café expresso, croissant e frutas frescas.\",\n                \"amount\": 100,\n                \"price\": 18.99,\n                \"categories\": [\n                    \"675dcfa9834ebd39a20b7f38\",\n                    \"675dd117834ebd39a20b7f3b\",\n                    \"675f532c0fd03168835a6c7e\"\n                ],\n                \"createdAt\": \"2024-12-15T22:11:44.520Z\",\n                \"updatedAt\": \"2024-12-15T22:31:50.684Z\",\n                \"__v\": 0\n            },\n            {\n                \"_id\": \"675f55570fd03168835a6c99\",\n                \"name\": \"Molho de Tomate Caseiro\",\n                \"description\": \"Molho de tomate artesanal, feito com ingredientes frescos e naturais.\",\n                \"amount\": 50,\n                \"price\": 8.99,\n                \"categories\": [\n                    \"675f532c0fd03168835a6c7e\"\n                ],\n                \"createdAt\": \"2024-12-15T22:16:55.308Z\",\n                \"updatedAt\": \"2024-12-15T22:16:55.308Z\",\n                \"__v\": 0\n            }\n        ]\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "Consultar todos os produtos de uma categoria específica",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/categories/{{idCategoria}}/products",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"categories",
+								"{{idCategoria}}",
+								"products"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Response 200",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:3000/api/categories/{{idCategoria}}/products",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"categories",
+										"{{idCategoria}}",
+										"products"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "1578"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"62a-caJyBN/LYGacxG/c6Slsqw5mKYA\""
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 15 Dec 2024 22:47:12 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"category\": {\n        \"_id\": \"675f532c0fd03168835a6c7e\",\n        \"name\": \"Gastronomia\",\n        \"description\": \"Categoria com produtos alimentícios que abrangem ingredientes, temperos, e alimentos prontos para consumo.\"\n    },\n    \"products\": [\n        {\n            \"_id\": \"675f53730fd03168835a6c83\",\n            \"name\": \"Smoothie de Frutas Vermelhas\",\n            \"description\": \"Bebida refrescante feita com frutas vermelhas, ideal para um lanche saudável.\",\n            \"amount\": 40,\n            \"price\": 12.99,\n            \"categories\": [\n                \"675dd117834ebd39a20b7f3b\",\n                \"675f532c0fd03168835a6c7e\"\n            ],\n            \"createdAt\": \"2024-12-15T22:08:51.669Z\",\n            \"updatedAt\": \"2024-12-15T22:08:51.669Z\",\n            \"__v\": 0\n        },\n        {\n            \"_id\": \"675f53f30fd03168835a6c87\",\n            \"name\": \"Marmita de Feijoada\",\n            \"description\": \"Prato típico brasileiro, feijoada com arroz, farofa e couve.\",\n            \"amount\": 50,\n            \"price\": 25.99,\n            \"categories\": [\n                \"675dcfa9834ebd39a20b7f38\",\n                \"675dd117834ebd39a20b7f3b\",\n                \"675f532c0fd03168835a6c7e\"\n            ],\n            \"createdAt\": \"2024-12-15T22:10:59.508Z\",\n            \"updatedAt\": \"2024-12-15T22:10:59.508Z\",\n            \"__v\": 0\n        },\n        {\n            \"_id\": \"675f54200fd03168835a6c8b\",\n            \"name\": \"Café da Manhã Completo\",\n            \"description\": \"Combo de café da manhã com café expresso, croissant e frutas frescas.\",\n            \"amount\": 100,\n            \"price\": 18.99,\n            \"categories\": [\n                \"675dcfa9834ebd39a20b7f38\",\n                \"675dd117834ebd39a20b7f3b\",\n                \"675f532c0fd03168835a6c7e\"\n            ],\n            \"createdAt\": \"2024-12-15T22:11:44.520Z\",\n            \"updatedAt\": \"2024-12-15T22:31:50.684Z\",\n            \"__v\": 0\n        },\n        {\n            \"_id\": \"675f55570fd03168835a6c99\",\n            \"name\": \"Molho de Tomate Caseiro\",\n            \"description\": \"Molho de tomate artesanal, feito com ingredientes frescos e naturais.\",\n            \"amount\": 50,\n            \"price\": 8.99,\n            \"categories\": [\n                \"675f532c0fd03168835a6c7e\"\n            ],\n            \"createdAt\": \"2024-12-15T22:16:55.308Z\",\n            \"updatedAt\": \"2024-12-15T22:16:55.308Z\",\n            \"__v\": 0\n        }\n    ]\n}"
+						}
+					]
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "idCategoria",
+			"value": "",
+			"type": "default"
+		},
+		{
+			"key": "idProduto",
+			"value": "",
+			"type": "default"
+		}
+	]
+}
