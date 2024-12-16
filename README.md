@@ -60,7 +60,7 @@ Esta é uma API desenvolvida com Node.js, Express e MongoDB para gerenciamento d
 3. O arquivo `.env` completo:
    ```env
    PORT=3000
-   MONGO_URI=mongodb://localhost:27017/nome_do_banco
+   MONGO_URI=mongodb://127.0.0.1:27017/nome_do_banco
    JWT_SECRET=sua_chave_secreta
    JWT_EXPIRES_IN=1h
    ```
